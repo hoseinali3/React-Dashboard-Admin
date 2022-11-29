@@ -1,0 +1,78 @@
+:root {
+    --gray1: #dbdbdb31;
+    --gray2: #a4a4a4;
+    --gray3: #8a8a8a;
+    --blue1: rgba(0, 149, 255, 0.09);
+    --boxShadow: 0 0 10px 0 rgba(0, 0, 0, 15%)
+}
+
+@font-face {
+    font-family: B-yekan3;
+    src: url(../../Font/YekanV3.eot);
+    src: url(../../Font/YekanV3.ttf);
+    src: url(../../Font/YekanV3.woff);
+}
+
+
+.feature-item {
+    border-radius: 15px;
+    box-shadow: var(--boxShadow);
+
+}
+
+.feature-title {
+    text-align: right;
+    color: rgb(32, 32, 32);
+    font-size: 34px;
+}
+
+.card-action-container {
+    border-radius: 15px !important;
+    width: 100%;
+    transition: 0.2s;
+}
+
+/* .card-action-container:focus,
+.card-action-container:hover{
+   
+    background-color: #ffffff !important;
+    
+} */
+.card-action {
+    padding: 30px 60px;
+    border-radius: 15px;
+}
+
+.feature-nums {
+    display: flex;
+    margin: 1em 0 0 0;
+    align-items: center;
+}
+
+.feature-price {
+    font-size: 28px;
+    color: rgb(61, 61, 61);
+
+}
+
+.feature-rate {
+    margin: 0 2em 0 0;
+    font-size: 20px;
+
+}
+
+.feature-content {
+    display: flex;
+    margin: 1.5em 0 0 0;
+    color: var(--gray3);
+    font-size: 16px;
+}
+
+.featureIcon {
+    color: green;
+    font-size: 30px !important;
+}
+
+.featureIcon.negative {
+    color: red;
+}

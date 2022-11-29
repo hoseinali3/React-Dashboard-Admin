@@ -1,0 +1,40 @@
+
+:root{
+   --boxShadow: 0 0 10px 0 rgba(0,0,0,15%)
+}
+
+
+
+.topbar{
+  
+   
+    position: sticky;
+   box-shadow: var(--boxShadow);
+    background-color: #fff;
+    top: 0;
+    z-index: 999;
+}
+
+.topbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 45px;
+}
+.topbar-leftside img{
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+.topbar-rightside{
+    display: flex;
+    align-items: center;
+}
+.topbar-icon-container{
+    margin: 0 6px;
+    cursor: pointer;
+}
+.avatar-icon{
+   
+    cursor: pointer;
+}

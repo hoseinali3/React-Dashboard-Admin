@@ -1,3 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: B-yekan;
+}
+@font-face {
+  font-family: B-yekan;
+  src: url(Font/YekanV3.eot);
+  src: url(Font/YekanV3.ttf);
+  src: url(Font/YekanV3.woff);
+}
+a{
+  text-decoration: none !important;
+}
+
+
+
+
 .App {
   text-align: center;
 }
@@ -27,6 +47,15 @@
 .App-link {
   color: #61dafb;
 }
+
+
+.contain{
+display: grid;
+grid-template-columns: 0.7fr repeat(3,1fr);
+margin: 1em 0 0 0;
+
+}
+
 
 @keyframes App-logo-spin {
   from {

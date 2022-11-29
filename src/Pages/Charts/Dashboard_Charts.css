@@ -1,0 +1,101 @@
+
+
+:root{
+    --gray1:#dbdbdb31;
+    --gray2:#a4a4a4;
+    --gray3:#8a8a8a;
+    
+    --blue1: #0095ff17;
+    --blue2: #0095ff8b;
+    --blue3: #0095ff;
+    --boxShadow: 0 0 10px 0 rgba(0,0,0,15%)
+}
+
+
+.charts-container{
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    grid-template-rows: 350px;
+    
+    gap: 20px;
+    margin: 20px 10px 20px 40px;
+}
+.charts-title{
+    padding: 0 40px 15px;
+    direction: rtl;
+}
+
+.chart1,
+.chart2,
+.chart3{
+    direction: ltr;
+    box-shadow: var(--boxShadow);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.chart3{
+    grid-column: 1/-1;
+}
+.chart2-shape{
+position: absolute;
+top: -1em;
+}
+.chart2-detail{
+    position: absolute;
+    bottom: 2.5em;
+    left: 0;
+    justify-content: center;
+    right: 0;
+    display: inline-flex;
+}
+.noteBookSale,
+.homeSale,
+.tvSale,
+.otherSale{
+margin: 0 5px;
+display: inline-flex;
+    align-items: center;
+}
+
+
+.noteBookSale::before,
+.homeSale::before,
+.tvSale::before,
+.otherSale::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 15em;
+    margin: 0 10px;
+}
+
+.noteBookSale::before{
+    background-color: #FFBB28;
+}
+
+.homeSale::before{
+    background-color: #00C49F;
+}
+.tvSale::before{
+    background-color: #0088FE;
+}
+.otherSale::before{
+    background-color: #FF8042; 
+}
+
+
+@media screen and (max-width:1196px) {
+    
+.charts-container{
+   
+    grid-template-rows: 300px 300px;
+    
+ 
+}
+
+}

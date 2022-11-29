@@ -1,0 +1,68 @@
+:root {
+    --gray1: #dbdbdb31;
+    --gray2: #a4a4a4;
+    --gray3: #8a8a8a;
+
+    --blue1: #0095ff17;
+    --blue2: #0095ff8b;
+    --blue3: #0095ff;
+    --boxShadow: 0 0 10px 0 rgba(0, 0, 0, 15%)
+}
+
+
+
+
+
+
+@font-face {
+    font-family: Lato-Regular;
+   
+    src: url(../../Font/Lato-Regular.ttf);
+   
+}
+
+
+.minichart-container {
+    border-radius: 15px;
+    box-shadow: var(--boxShadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.sale-title {
+    text-align: right;
+    color: rgb(32, 32, 32);
+    font-size: 34px;
+}
+
+.sale-card{
+    padding: 20px 10% 0 0;
+}
+
+.sale-nums {
+    display: flex;
+    margin: 1em 0 0 0;
+    align-items: center;
+}
+
+.sale-price {
+    font-size: 28px;
+    color: rgb(83, 83, 83);
+    font-family: Lato-Regular;
+}
+
+.sale-price > span{
+    font-family: B-yekan;
+}
+
+.sale-rate {
+    position: absolute;
+    font-size: 40px;
+font-family: Lato-Regular;
+left: 6%;
+top: 0.9em;
+}
+
+.arrow-font{
+    font-size: 40px !important;
+}

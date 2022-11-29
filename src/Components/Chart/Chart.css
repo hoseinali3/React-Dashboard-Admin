@@ -1,0 +1,23 @@
+
+
+
+
+:root{
+    --gray1:#dbdbdb31;
+    --gray2:#a4a4a4;
+    --gray3:#8a8a8a;
+    --blue1: rgba(0, 149, 255, 0.09);
+    --boxShadow: 0 0 10px 0 rgba(0,0,0,15%)
+}
+
+
+.chart{
+    display: block;
+}
+
+
+.chart-title{
+    margin: 0 0 20px 0;
+    
+}
+

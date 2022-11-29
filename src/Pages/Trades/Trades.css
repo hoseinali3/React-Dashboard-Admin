@@ -1,0 +1,122 @@
+
+:root{
+    --gray1:#dbdbdb31;
+    --gray2:#a4a4a4;
+    --gray3:#8a8a8a;
+    
+    --blue1: #0095ff17;
+    --blue2: #0095ff8b;
+    --blue3: #0095ff;
+    --boxShadow: 0 0 10px 0 rgba(0,0,0,15%)
+}
+
+
+
+.trades-container{
+    grid-column: 2/5;
+    padding: 2em 1em 0 2.1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    grid-template-rows: 250px 600px;
+gap: 20px;
+}
+
+
+.trade-cards{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+gap: 20px;
+}
+
+.t-card1,
+.t-card2,
+.t-card3,
+.t-card4,
+.t-card5,
+.t-card6{
+    box-shadow: var(--boxShadow);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 20px;
+}
+
+.t-card1-num,
+.t-card2-num,
+.t-card3-num,
+.t-card4-num,
+.t-card5-num,
+.t-card6-num{
+    font-family: Lato-Regular;
+    font-size: 32px;
+    align-self: center;
+}
+.t-card1-num{
+    color: #fe9e19;
+}
+.t-card2-num{
+    color: #0057ee;
+}
+.t-card3-num{
+    color: #d92100;
+}
+.t-card4-num{
+    color: #4ad300;
+}
+.t-card5-num{
+    color: #8f00e8;
+}
+.t-card6-num{
+    color: #ec0089;
+}
+
+.t-card-title{
+    font-size: 26px;
+}
+
+.t-card1-profit,
+.t-card2-profit,
+.t-card3-profit,
+.t-card4-profit,
+.t-card5-profit,
+.t-card6-profit{
+    font-family: Lato-Regular;
+    font-size: 16px;
+    align-self: center;
+    padding: 5px;
+border-radius: 10em;
+}
+
+.t-card1-profit{
+    color: #ffac38;
+    background-color: #fe9f1921;
+}
+.t-card2-profit{
+    color: #0057ee;
+    background-color: #0057ee21;
+}
+.t-card3-profit{
+    color: #d92100;
+    background-color: #d9210021;
+}
+.t-card4-profit{
+    color: #4ad300;
+    background-color: #4ad30021;
+}
+.t-card5-profit{
+    color: #8f00e8;
+    background-color: #8f00e821;
+}
+.t-card6-profit{
+    color: #ec0089;
+    background-color: #ec008921;
+}
+
+
+@media screen and (max-width:1195px) {
+    .trades-container{
+          grid-template-rows: repeat(2, 250px);
+    
+    }
+}

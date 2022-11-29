@@ -1,0 +1,123 @@
+
+
+:root{
+    --gray1:#dbdbdb31;
+    --gray2:#a4a4a4;
+    --gray3:#8a8a8a;
+    
+    --blue1: #0095ff17;
+    --blue2: #0095ff8b;
+    --blue3: #0095ff;
+    --boxShadow: 0 0 10px 0 rgba(0,0,0,15%)
+}
+
+
+.newUser-container{
+    grid-column: 2/5;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,max-content));
+
+gap: 20px;
+
+}
+
+.input-fields{
+  border-radius: 15px;
+box-shadow: var(--boxShadow);
+  padding: 20px 40px;
+position: relative;
+}
+
+.newUser-avatar{
+    width: 150px !important;
+    height: auto !important;
+    margin: 0 0 30px 0;
+    top: 1em;
+    right: 2em;
+}
+.text-field{
+    margin: 10px 20px !important;
+    top: 2em;
+    width: 45%;
+}
+
+.newUser-addPhoto{
+    position: absolute;
+    right: 11em;
+    top: 12em;
+    background-color: #fff;
+    border-radius: 15em;
+    border: 1px dashed var(--gray2);
+}
+.newUser-save-container{
+    display: flex;
+    margin: 45px 0 0 0;
+    width: 100%;
+}
+.newUser-save{
+    padding: 0 19px;
+    width: 48%;
+}
+
+.loading-saveBtn,
+.cancelBtn{
+    direction: ltr;
+    font-size: 20px !important;
+    font-family: "B-yekan" !important;
+    
+}
+
+.loading-saveBtn{
+    margin: 15px 0 0 0 !important;
+}
+
+.cancelBtn{
+    margin: 15px 15px 0 0!important;
+}
+
+.newUser-divDesc{
+    padding: 0 18px;
+    width: 48%;
+}
+.newUser-desc{
+    border-color: #a4a4a4;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+.newUser-desc:focus{
+    outline: none;
+    border:2px solid rgb(0, 85, 212);
+}
+
+@media screen and (max-width:1133px) {
+    .text-field{
+        width: 94%;
+    }
+    
+    
+    .newUser-save{
+       margin: 15px 0 0 0;
+        width: 100%;
+    }
+    .newUser-save-container{
+        flex-direction: column;
+    }
+    .newUser-divDesc{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1400px) {
+  
+    .newUser-save-container{
+        justify-content:center;
+        gap: 15px;
+    }
+   .newUser-divDesc{
+    padding: 0 9px;
+   }
+   .newUser-save{
+    padding: 0 10px;
+   }
+}

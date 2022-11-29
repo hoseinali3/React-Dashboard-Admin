@@ -1,0 +1,28 @@
+
+:root {
+    --gray1: #dbdbdb31;
+    --gray2: #a4a4a4;
+    --gray3: #8a8a8a;
+
+    --blue1: #0095ff17;
+    --blue2: #0095ff8b;
+    --blue3: #0095ff;
+    --boxShadow: 0 0 10px 0 rgba(0, 0, 0, 15%)
+}
+
+
+
+
+.barchart-container {
+    border-radius: 15px;
+    box-shadow: var(--boxShadow);
+    position: relative;
+    overflow: hidden;
+    direction: ltr;
+    padding: 0 0 20px 0
+}
+
+.barchart-title{
+    direction: rtl;
+    padding: 20px 40px;
+}

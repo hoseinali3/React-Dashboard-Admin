@@ -1,0 +1,87 @@
+:root{
+    --gray1:#dbdbdb31;
+    --gray2:#a4a4a4;
+    --gray3:#8a8a8a;
+    
+    --blue1: rgba(0, 149, 255, 0.09);
+    --boxShadow: 0 0 10px 0 rgba(0,0,0,15%)
+}
+
+.widget2{
+    padding: 20px;
+     box-shadow: var(--boxShadow);
+     
+     border-radius: 15px;
+     
+   
+ }
+
+.widget2-title{
+  
+   margin: 0 0 1em 0;
+}
+
+
+ .widget2-table{
+    width: 100%;
+    
+ }
+ .widget2-tr{
+   text-align: center;
+   padding: 5px 0;
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   align-items: center;
+ }
+ .widget2-user{
+   display: grid;
+   grid-template-columns: repeat(2,max-content);
+   align-items: center;
+ }
+
+.widget2-customer,
+.widget2-date,
+.widget2-amount{
+   color: var(--gray3);
+   transition: 0.2s;
+   font-size: 16px;
+}
+.widget2-tr:hover .widget2-customer,
+.widget2-tr:hover .widget2-date,
+.widget2-tr:hover .widget2-amount{
+   color: var(--bslink-hover-color);
+}
+
+.widget2-date{
+   padding: auto;
+}
+.avatar-icon2{
+   margin: 10px;
+}
+
+.glow-btn2{
+   border-radius: 15px !important;
+  
+  margin: 0 auto;
+   width: 100%;
+  padding: 0 !important;
+}
+
+.widget2btn{
+   border: none;
+   padding: 5px 7px;
+   border-radius: 8px;
+}
+.widget2btn.Pending{
+   background-color: #ffc4001c;
+   color: #be9b00;
+}
+.widget2btn.Approved{
+   background-color: #40b7001c;
+   color: #40b700;
+}
+.widget2btn.Decline{
+   background-color: #d300001a;
+   color: #d30000;
+}

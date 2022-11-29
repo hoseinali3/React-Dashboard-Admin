@@ -1,0 +1,39 @@
+:root{
+    --gray1:#dbdbdb31;
+    --gray2:#a4a4a4;
+    --gray3:#8a8a8a;
+    
+    --blue1: rgba(0, 149, 255, 0.09);
+    --boxShadow: 0 0 10px 0 rgba(0,0,0,15%)
+}
+
+.data-grid{
+    grid-column: 2/5;
+    padding: 20px;
+}
+.productList{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    align-items: center;
+    column-gap: 20px;
+    color: #363636;
+    text-decoration: none !important;
+}
+
+
+
+.actionUsers{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+   column-gap: 10px;
+}
+
+.css-17jjc08-MuiDataGrid-footerContainer{
+    direction: ltr;
+}
+
+
+.product-img{
+    width: 50px;
+    height: auto;
+}
