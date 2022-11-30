@@ -5,7 +5,8 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import Avatar from '@mui/material/Avatar';
 import Badge from '@mui/material/Badge';
 import IconButton from '@mui/material/IconButton';
-
+import ShopLogo from './../../images/online-shopping-logo-design-with-a-tablet-under-vector-133148.png'
+import IronManAvarat from './../../images/ironman-avatar.jpg'
 import './TopBar.css'
 
 export default function TopBar() {
@@ -14,7 +15,7 @@ export default function TopBar() {
         <div className="topbar-wrapper">
 
             <div className="topbar-leftside">
-                <img src="/images/online-shopping-logo-design-with-a-tablet-under-vector-133148.png" alt="" />
+                <img src={ShopLogo} alt="" />
             </div>
             <div className="topbar-rightside">
                     <div className="topbar-icon-container">
@@ -43,7 +44,7 @@ export default function TopBar() {
                     </div>
                     <IconButton color='primary'>
 
-                    <Avatar className='avatar-icon' src="/images/ironman-avatar.jpg"/>
+                    <Avatar className='avatar-icon' src={IronManAvarat}/>
                     </IconButton>
             </div>
         </div>

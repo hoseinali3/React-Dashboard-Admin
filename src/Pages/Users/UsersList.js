@@ -11,9 +11,13 @@ import useFetch from '../../Components/Hooks/useFetch';
 export default function UsersList() {
 
 
-  const [users, setUsers] = useFetch("http://localhost:4000/users2")
+  const [users, setUsers] = useFetch([])
 
-
+  useEffect(() => {
+    fetch("https://hoseinali3.github.io/fetchAPI/db.json")
+        .then(res => res.json())
+        .then(data => setUsers(data.users2))
+}, [])
 
 const deleteUser = userID => {
   setUsers(users.filter(user => user.id !== userID))
@@ -35,9 +39,9 @@ let mainIndex = users.map((user,index) => {
       renderCell:(params) => {
         return (
           
-          <Link to={`/user/${params.row.id}`}>
+          <Link to={`/React-Dashboard-Admin/user/${params.row.id}`}>
           <div className="usersListUser">
-            <Avatar src='/images/ironman-avatar.jpg' className='avatar-icon'/>
+            <Avatar src='images/ironman-avatar.jpg' className='avatar-icon'/>
          {params.row.username}
           </div>
           </Link>
@@ -64,7 +68,7 @@ let mainIndex = users.map((user,index) => {
      renderCell: (params) => {
       return(
         <div className='actionUsers'>
-        <Link to={`/user/${params.row.id}`}>
+        <Link to={`/React-Dashboard-Admin/user/${params.row.id}`}>
         <IconButton color='primary'>
         <EditOutlinedIcon/>
         </IconButton>

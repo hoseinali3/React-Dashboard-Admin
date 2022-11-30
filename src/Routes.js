@@ -10,16 +10,16 @@ import Sales from "./Pages/Sales/Sales";
 import Trades from "./Pages/Trades/Trades";
 
 const Routes = [
-    {path:'/', element: <Home/>},
-    {path:'/dashboard_charts', element: <Dashboard_Charts/>},
-    {path:'/sales', element: <Sales/>},
-    {path:'/users', element: <UsersList/>},
-    {path:'/user/:userID', element: <EditUser/>},
-    {path:'/newUser', element: <NewUser/>},
-    {path:'/products', element: <Products/>},
-    {path:'/product/:productID',element:<Product/>},
-    {path:'/trades',element:<Trades/>},
-    {path:'/staff_chart',element:<Staff_Charts/>}
+    {path:'/React-Dashboard-Admin/', element: <Home/>},
+    {path:'/React-Dashboard-Admin/dashboard_charts', element: <Dashboard_Charts/>},
+    {path:'/React-Dashboard-Admin/sales', element: <Sales/>},
+    {path:'/React-Dashboard-Admin/users', element: <UsersList/>},
+    {path:'/React-Dashboard-Admin/user/:userID', element: <EditUser/>},
+    {path:'/React-Dashboard-Admin/newUser', element: <NewUser/>},
+    {path:'/React-Dashboard-Admin/products', element: <Products/>},
+    {path:'/React-Dashboard-Admin/product/:productID',element:<Product/>},
+    {path:'/React-Dashboard-Admin/trades',element:<Trades/>},
+    {path:'/React-Dashboard-Admin/staff_chart',element:<Staff_Charts/>}
    
 ]
 

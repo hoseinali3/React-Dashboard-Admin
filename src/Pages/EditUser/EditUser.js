@@ -8,6 +8,7 @@ import useFetch from '../../Components/Hooks/useFetch';
 import AddToPhotosIcon from '@mui/icons-material/AddToPhotos';
 import React, { useState,useEffect } from 'react'
 import { useParams,useNavigate } from 'react-router-dom';
+import IronManAvarat from './../../images/ironman-avatar.jpg'
 import swal from 'sweetalert';
 
 export default function EditUser() {
@@ -15,7 +16,7 @@ export default function EditUser() {
     
     const [dates, setDates] = useState(dayjs('2022-08-18T21:11:54'))
     const [btnLoading, setBtnLoading] = useState(false)
-    const [users,setUsers,fetchComp,setFetchComp] = useFetch("http://localhost:4000/users2")
+    // const [users,setUsers,fetchComp,setFetchComp] = useFetch("http://localhost:4000/users2")
     const param = useParams()
     const [username, setUserName] = useState('')
     const [email, setEmail] = useState('')
@@ -45,7 +46,7 @@ export default function EditUser() {
         setDates(newValue);
     };
     
-    const mainUser = fetchComp && users.find(user => user.id == param.userID)
+    // const mainUser = fetchComp && users.find(user => user.id == param.userID)
   
     const btnLoadingChange = () => {
 
@@ -74,50 +75,59 @@ export default function EditUser() {
         if (password.length === password2.length) {
           setBtnLoading(true)
   
-          const newUserObj = {
-            id: users.length + 1,
-            username,
-            email,
-            password,
-            address,
-            phoneNumber,
-            desc
-          }
+          // const newUserObj = {
+          //   id: users.length + 1,
+          //   username,
+          //   email,
+          //   password,
+          //   address,
+          //   phoneNumber,
+          //   desc
+          // }
   
           setTimeout(() => {
-            fetch(`http://localhost:4000/users2/${param.userID}`, {
-              method: "PUT",
-              body: JSON.stringify(newUserObj),
-              headers: {
-                "Content-Type": "application/json"
-              }
-            })
-              .then(res => res.json())
-              .then(data => {
-               data && swal("موفق!", "کاربر با موفقیت ویرایش شد !", "success", {
-                button: {
-                  text: "باشه",
-                  value: true,
-                  visible: true,
-                  className: "",
-                  closeModal: true,
+            // fetch(`http://localhost:4000/users2/${param.userID}`, {
+            //   method: "PUT",
+            //   body: JSON.stringify(newUserObj),
+            //   headers: {
+            //     "Content-Type": "application/json"
+            //   }
+            // })
+            //   .then(res => res.json())
+            //   .then(data => {
+            //    data && swal("موفق!", "کاربر با موفقیت ویرایش شد !", "success", {
+            //     button: {
+            //       text: "باشه",
+            //       value: true,
+            //       visible: true,
+            //       className: "",
+            //       closeModal: true,
           
-                }
-              })
-              })
-              .catch(err => {
-               err && swal("خطا!", "در ویرایش مشکلی وجود دارد!", "error", {
-                button: {
-                  text: "باشه",
-                  value: true,
-                  visible: true,
-                  className: "",
-                  closeModal: true
-                }
-              })
-              })
+            //     }
+            //   })
+            //   })
+            //   .catch(err => {
+            //    err && swal("خطا!", "در ویرایش مشکلی وجود دارد!", "error", {
+            //     button: {
+            //       text: "باشه",
+            //       value: true,
+            //       visible: true,
+            //       className: "",
+            //       closeModal: true
+            //     }
+            //   })
+            //   })
   
-  
+            swal("موفق!", "کاربر با موفقیت ویرایش شد !", "success", {
+                  button: {
+                    text: "باشه",
+                    value: true,
+                    visible: true,
+                    className: "",
+                    closeModal: true,
+            
+                  }
+                })
             setUserName('')
             setEmail('')
             setPassword('')
@@ -152,7 +162,7 @@ export default function EditUser() {
 
         <div className="input-fields">
           <h3 className='newUser-title'>ویرایش کاربر</h3>
-          <Avatar src='/images/ironman-avatar.jpg' className='newUser-avatar' />
+          <Avatar src={IronManAvarat} className='newUser-avatar' />
           <div className='newUser-addPhoto'>
   
             <IconButton component="label">
@@ -212,6 +222,7 @@ export default function EditUser() {
             inputProps={{ style: { fontFamily: "B-yekan" } }} InputLabelProps={{ style: { fontFamily: "B-yekan" } }}
             id="outlined-required"
             label="آدرس"
+            required
             error={errAddress}
             onChange={event => setAddress(event.target.value)}
           />

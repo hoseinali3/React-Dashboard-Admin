@@ -14,7 +14,7 @@ import dayjs from 'dayjs';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import LoadingButton from '@mui/lab/LoadingButton'
 import SaveIcon from '@mui/icons-material/Save';
-
+import ZenbookImage from './../../images/products/zenbook.png'
 
 export default function Product() {
 
@@ -26,18 +26,23 @@ export default function Product() {
   const [productNumber, setProductNumber] = useState('1');
   const [productPrice, setProductPrice] = useState("35,700,000");
   const [tabCount, setTabCount] = useState(0)
-  const [fetchSpecs, setFetchSpecs] = useFetch("http://localhost:4000/product_specs")
+  const [fetchSpecs, setFetchSpecs] = useState([])
   const [rated, setRated] = useState(3)
   const [dates, setDates] = useState(dayjs('2022-08-18T21:11:54'))
   const [btnLoading, setBtnLoading] = useState(false)
-  const [review, setReview] = useFetch("http://localhost:4000/product_review")
+  const [review, setReview] = useState([])
 
 
-  const getProduct = async () => {
-    await fetch("http://localhost:4000/products")
+  useEffect( () => {
+     fetch("https://hoseinali3.github.io/fetchAPI/db.json")
       .then(res => res.json())
-      .then(data => setProduct(data))
-  }
+      .then(data => {
+        setFetchSpecs(data.product_specs)
+        setReview(data.product_review)
+      })},[])
+  
+
+
   const isInStockChangeHandler = (event) => {
     setIsInStock(event.target.value);
   };
@@ -89,7 +94,7 @@ export default function Product() {
           <TextField onChange={changeTitleHandler} value={productTitle} inputProps={{ style: { fontFamily: "B-yekan" } }} InputLabelProps={{ style: { fontFamily: "B-yekan" } }} style={{ width: "50%" }} id="outlined-basic" label="نام محصول" variant="outlined" />
 
         </h3>
-        <img src="/images/products/zenbook.png" className='productDetail-img' alt="" />
+        <img src={ZenbookImage} className='productDetail-img' alt="" />
         <div className='productDetail-pic-addPhoto'>
 
           <IconButton component="label">
@@ -98,10 +103,10 @@ export default function Product() {
           </IconButton>
         </div>
         <div className="thumbs">
-          <img src="/images/products/zenbook.png" className='productDetail-imgthumb' alt="" />
-          <img src="/images/products/zenbook.png" className='productDetail-imgthumb' alt="" />
-          <img src="/images/products/zenbook.png" className='productDetail-imgthumb' alt="" />
-          <img src="/images/products/zenbook.png" className='productDetail-imgthumb' alt="" />
+          <img src={ZenbookImage} className='productDetail-imgthumb' alt="" />
+          <img src={ZenbookImage} className='productDetail-imgthumb' alt="" />
+          <img src={ZenbookImage} className='productDetail-imgthumb' alt="" />
+          <img src={ZenbookImage} className='productDetail-imgthumb' alt="" />
 
         </div>
         <ul className='productDetail-pic-list'>

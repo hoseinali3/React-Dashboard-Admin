@@ -18,19 +18,19 @@ const sideBarData = [
       newLi: [
         {
           id: 1,
-          link: "/",
+          link: "/React-Dashboard-Admin/",
           icon: <HomeOutlinedIcon/>,
           linkName: "صفحه اصلی"
         },
         {
           id: 2,
-          link: "/dashboard_charts",
+          link: "/React-Dashboard-Admin/dashboard_charts",
         icon: <TimelineOutlinedIcon/>,
           linkName: "نمودار"
         },
         {
           id: 3,
-          link: "/sales",
+          link: "/React-Dashboard-Admin/sales",
           icon: <AttachMoneyOutlinedIcon/>,
           linkName: "فروش"
         }
@@ -42,31 +42,31 @@ const sideBarData = [
       newLi: [
         {
           id: 4,
-          link: "/users",
+          link: "/React-Dashboard-Admin/users",
           icon: <PeopleAltOutlinedIcon/>,
           linkName: "کاربران"
         },
         {
           id: 5,
-          link: "/newUser",
+          link: "/React-Dashboard-Admin/newUser",
           icon: <PersonAddAltOutlinedIcon/>,
           linkName: "کاربران جدید"
         },
         {
         id: 6,
-          link: "/products",
+          link: "/React-Dashboard-Admin/products",
           icon: <Inventory2OutlinedIcon/>,
           linkName: "محصولات"
         },
         {
           id: 7,
-          link: "/trades",
+          link: "/React-Dashboard-Admin/trades",
           icon: <MonetizationOnOutlinedIcon/>,
           linkName: "معاملات"
         },
         {
           id: 8,
-          link: "/q_reports",
+          link: "/React-Dashboard-Admin/q_reports",
           icon: <AssessmentOutlinedIcon/>,
           linkName: "گزارشات"
         }
@@ -78,19 +78,19 @@ const sideBarData = [
       newLi: [
         {
           id: 9,
-          link: "/emails",
+          link: "/React-Dashboard-Admin/emails",
           icon: <EmailOutlinedIcon/>,
           linkName: "ایمیل"
         },
         {
           id: 10,
-          link: "/reactions",
+          link: "/React-Dashboard-Admin/reactions",
           icon: <ChatBubbleOutlineOutlinedIcon/>,
           linkName: "بازخورد"
         },
         {
           id: 11,
-          link: "/massages",
+          link: "/React-Dashboard-Admin/massages",
           icon: <QuestionAnswerOutlinedIcon/>,
           linkName: "پیام ها"
         }
@@ -102,19 +102,19 @@ const sideBarData = [
       newLi: [
         {
           id: 1,
-          link: "/administrator",
+          link: "/React-Dashboard-Admin/administrator",
           icon: <WorkOutlineOutlinedIcon/>,
           linkName: "مدیریت"
         },
         {
           id: 2,
-          link: "/staff_chart",
+          link: "/React-Dashboard-Admin/staff_chart",
           icon: <TimelineOutlinedIcon/>,
           linkName: "نمودار"
         },
         {
           id: 3,
-          link: "/staff_reports",
+          link: "/React-Dashboard-Admin/staff_reports",
           icon: <ErrorOutlineOutlinedIcon/>,
           linkName: "گزارشات"
         }

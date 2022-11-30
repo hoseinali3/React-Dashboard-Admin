@@ -9,6 +9,7 @@ import AddToPhotosIcon from '@mui/icons-material/AddToPhotos';
 import React, { useState } from 'react'
 import useFetch from '../../Components/Hooks/useFetch';
 import { useNavigate } from 'react-router-dom';
+import IronManAvarat from './../../images/ironman-avatar.jpg'
 import './NewUser.css';
 import swal from 'sweetalert';
 export default function NewUser() {
@@ -81,38 +82,46 @@ export default function NewUser() {
         }
 
         setTimeout(() => {
-          fetch("http://localhost:4000/users2", {
-            method: "POST",
-            body: JSON.stringify(newUserObj),
-            headers: {
-              "Content-Type": "application/json"
-            }
-          })
-            .then(res => res.json())
-            .then(data => {
-              data && swal("موفق!", "شما با موفقیت ثبت نام شدید!", "success", {
-                button: {
-                  text: "باشه",
-                  value: true,
-                  visible: true,
-                  className: "",
-                  closeModal: true,
+          // fetch("http://localhost:4000/users2", {
+          //   method: "POST",
+          //   body: JSON.stringify(newUserObj),
+          //   headers: {
+          //     "Content-Type": "application/json"
+          //   }
+          // })
+          //   .then(res => res.json())
+          //   .then(data => {
+          //     data && swal("موفق!", "شما با موفقیت ثبت نام شدید!", "success", {
+          //       button: {
+          //         text: "باشه",
+          //         value: true,
+          //         visible: true,
+          //         className: "",
+          //         closeModal: true,
           
-                }
-              })
-            })
-            .catch(err => {
-              err && swal("خطا!", "در ثبت نام مشکلی وجود دارد!", "error", {
-                button: {
-                  text: "باشه",
-                  value: true,
-                  visible: true,
-                  className: "",
-                  closeModal: true
-                }
-              })
-            })
-
+          //       }
+          //     })
+          //   })
+          //   .catch(err => {
+          //     err && swal("خطا!", "در ثبت نام مشکلی وجود دارد!", "error", {
+          //       button: {
+          //         text: "باشه",
+          //         value: true,
+          //         visible: true,
+          //         className: "",
+          //         closeModal: true
+          //       }
+          //     })
+          //   })
+          swal("موفق!", "شما با موفقیت ثبت نام شدید!", "success", {
+                  button: {
+                    text: "باشه",
+                    value: true,
+                    visible: true,
+                    className: "",
+                    closeModal: true
+                  }
+                })
 
           setUserName('')
           setEmail('')
@@ -127,7 +136,7 @@ export default function NewUser() {
             setErrorAlert(false)
             setBtnLoading(false)
             setSuccessAlert(false)
-              navigate('/users')
+              
           }, 4000);
 
         }, 2000);
@@ -148,7 +157,7 @@ export default function NewUser() {
 
       <div className="input-fields">
         <h3 className='newUser-title'>کاربر جدید</h3>
-        <Avatar src='/images/ironman-avatar.jpg' className='newUser-avatar' />
+        <Avatar src={IronManAvarat} className='newUser-avatar' />
         <div className='newUser-addPhoto'>
 
           <IconButton component="label">
@@ -207,6 +216,7 @@ export default function NewUser() {
           value={address}
           inputProps={{ style: { fontFamily: "B-yekan" } }} InputLabelProps={{ style: { fontFamily: "B-yekan" } }}
           id="outlined-required"
+          required
           label="آدرس"
           error={errAddress}
           onChange={event => setAddress(event.target.value)}

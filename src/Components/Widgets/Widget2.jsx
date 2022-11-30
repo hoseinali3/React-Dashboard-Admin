@@ -4,14 +4,15 @@ import IconButton from '@mui/material/IconButton';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import React from 'react'
 import './Widget2.css'
+import IronManAvarat from './../../images/ironman-avatar.jpg'
 import { Button } from '@mui/material';
 export default function Widget2() {
     const [customers, setCustomers] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:4000/customers")
+        fetch("https://hoseinali3.github.io/fetchAPI/db.json")
             .then(res => res.json())
-            .then(data => setCustomers(data))
+            .then(data => setCustomers(data.customers))
     }, [])
 
 const NewButton = ({type,name}) => {
@@ -33,7 +34,7 @@ const NewButton = ({type,name}) => {
                         <Button key={user.id} className='glow-btn2'>
                     <tr className='widget2-tr'>
                     <td className='widget2-user'>
-                    <Avatar className='avatar-icon2' src="/images/ironman-avatar.jpg" />
+                    <Avatar className='avatar-icon2' src={IronManAvarat} />
                     <span className='widget2-customer'>{user.username}</span>
                     </td>
                     <td className='widget2-date'>{user.date}</td>

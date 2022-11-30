@@ -13,9 +13,9 @@ export default function Products() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-      fetch("http://localhost:4000/products")
+      fetch("https://hoseinali3.github.io/fetchAPI/db.json")
           .then(res => res.json())
-          .then(data => setProducts(data))
+          .then(data => setProducts(data.products))
   }, [])
 
 const deleteProducts = productID => {
@@ -34,9 +34,9 @@ const deleteProducts = productID => {
       renderCell:(params) => {
         return (
           
-          <Link to={`/product/${params.row.id}`}>
+          <Link to={`/React-Dashboard-Admin/product/${params.row.id}`}>
           <div className="productList">
-            <img src='/images/products/zenbook.png' className='product-img'/>
+            <img src='images/products/zenbook.png' className='product-img'/>
          {params.row.p_name}
           </div>
           </Link>
@@ -58,7 +58,7 @@ const deleteProducts = productID => {
      renderCell: (params) => {
       return(
         <div className='actionUsers'>
-        <Link to={`/product/${params.row.id}`}>
+        <Link to={`/React-Dashboard-Admin/product/${params.row.id}`}>
         <IconButton color='primary'>
         <EditOutlinedIcon/>
         </IconButton>
