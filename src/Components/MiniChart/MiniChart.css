@@ -66,3 +66,15 @@ top: 0.9em;
 .arrow-font{
     font-size: 40px !important;
 }
+
+@media screen and (max-width:700px) {
+    .sale-rate {
+        
+        font-size: 25px;
+ 
+    }
+    
+    .arrow-font{
+        font-size: 25px !important;
+    }
+}

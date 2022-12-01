@@ -14,7 +14,7 @@
 
 .newUser-container{
     grid-column: 2/5;
-    margin: 20px;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,max-content));
 
@@ -91,6 +91,21 @@ position: relative;
     border:2px solid rgb(0, 85, 212);
 }
 
+
+@media screen and (max-width:1400px) {
+  
+    .newUser-save-container{
+        justify-content:center;
+        gap: 15px;
+    }
+   .newUser-divDesc{
+    padding: 0 9px;
+   }
+   .newUser-save{
+    padding: 0 10px;
+   }
+}
+
 @media screen and (max-width:1133px) {
     .text-field{
         width: 94%;
@@ -108,16 +123,43 @@ position: relative;
         width: 100%;
     }
 }
-@media screen and (max-width:1400px) {
-  
-    .newUser-save-container{
-        justify-content:center;
-        gap: 15px;
+
+
+@media screen and (max-width:700px) {
+
+    .text-field {
+        width: 83%;
     }
-   .newUser-divDesc{
-    padding: 0 9px;
-   }
-   .newUser-save{
-    padding: 0 10px;
-   }
+
+
+    .newUser-container{
+        grid-column: 1/-1;
+        padding: 1em;    
+        grid-template-columns: repeat(auto-fit,minmax(350px,max-content));
+    }
+    .newUser-save-container {
+        gap: 0;
+    }
+    .newUser-save {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:500px) {
+
+    .newUser-container{
+        grid-column: 1/-1;
+        padding: 1em;    
+        grid-template-columns: repeat(auto-fit,minmax(300px,max-content));
+    
+    
+    }
+
+    .newUser-divDesc {
+        padding: 0 20px;
+    }
+.newUser-avatar {
+    right: 0;
+    margin: 0 auto;
+}
+ 
 }

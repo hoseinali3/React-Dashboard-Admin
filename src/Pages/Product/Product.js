@@ -91,7 +91,7 @@ export default function Product() {
       <div className="productDetail-pic">
         <h3 className='productDetail-title'>
 
-          <TextField onChange={changeTitleHandler} value={productTitle} inputProps={{ style: { fontFamily: "B-yekan" } }} InputLabelProps={{ style: { fontFamily: "B-yekan" } }} style={{ width: "50%" }} id="outlined-basic" label="نام محصول" variant="outlined" />
+          <TextField onChange={changeTitleHandler} value={productTitle} inputProps={{ style: { fontFamily: "B-yekan" } }} InputLabelProps={{ style: { fontFamily: "B-yekan" } }} className="productDetail-title-into" id="outlined-basic" label="نام محصول" variant="outlined" />
 
         </h3>
         <img src={ZenbookImage} className='productDetail-img' alt="" />

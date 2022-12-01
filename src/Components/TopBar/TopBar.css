@@ -26,6 +26,9 @@
     height: auto;
     cursor: pointer;
 }
+.humburger-menu{
+    display: none !important;
+}
 .topbar-rightside{
     display: flex;
     align-items: center;
@@ -37,4 +40,15 @@
 .avatar-icon{
    
     cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .topbar-leftside img{
+      display: none;
+    }
+    .humburger-menu{
+        display: inline-block !important;
+        font-size: 50px !important;
+        color: rgb(36, 36, 36);
+    }
 }

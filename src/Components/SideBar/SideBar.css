@@ -64,3 +64,10 @@ ul{
     
    padding: 0 !important;
 }
+
+
+@media screen and (max-width:700px) {
+    .sidebar{
+        display: none;
+    }
+}

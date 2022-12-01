@@ -17,19 +17,40 @@
     padding: 2em 0 2em 2em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-    grid-template-rows: 250px 250px;
+    grid-template-rows: repeat(2,250px);
     gap: 20px;
 }
 
 
 @font-face {
     font-family: Lato-Regular;
-   
+
     src: url(../../Font/Lato-Regular.ttf);
-   
+
 }
 
 
-.sale-box5{
+.sale-box5 {
     grid-column: 1/-1;
+}
+
+
+@media screen and (max-width:700px) {
+
+    .sales-container {
+        grid-column: 1/-1;
+        padding: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-rows: repeat(4,250px);
+    }
+}
+@media screen and (max-width:500px) {
+
+    .sales-container {
+        
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+
+
 }
