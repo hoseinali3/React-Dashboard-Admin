@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Dashboard-Admin/static/css/main.94a1127b.css",
+    "main.css": "/React-Dashboard-Admin/static/css/main.2bd7def3.css",
     "main.js": "/React-Dashboard-Admin/static/js/main.af80e610.js",
     "static/js/787.ae971348.chunk.js": "/React-Dashboard-Admin/static/js/787.ae971348.chunk.js",
     "static/media/ironman-avatar.jpg": "/React-Dashboard-Admin/static/media/ironman-avatar.9671e415c3060b5ae06e.jpg",
@@ -13,12 +13,12 @@
     "static/media/YekanV3.woff": "/React-Dashboard-Admin/static/media/YekanV3.18af8c75ab1951a5e56d.woff",
     "static/media/logo.svg": "/React-Dashboard-Admin/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/React-Dashboard-Admin/index.html",
-    "main.94a1127b.css.map": "/React-Dashboard-Admin/static/css/main.94a1127b.css.map",
+    "main.2bd7def3.css.map": "/React-Dashboard-Admin/static/css/main.2bd7def3.css.map",
     "main.af80e610.js.map": "/React-Dashboard-Admin/static/js/main.af80e610.js.map",
     "787.ae971348.chunk.js.map": "/React-Dashboard-Admin/static/js/787.ae971348.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94a1127b.css",
+    "static/css/main.2bd7def3.css",
     "static/js/main.af80e610.js"
   ]
 }
