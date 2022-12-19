@@ -224,6 +224,7 @@ background-color: var(--blue1);
       
        
     }
+   
 }
 @media screen and (max-width:700px) {
     .chats-body-leftside{
@@ -240,7 +241,9 @@ background-color: var(--blue1);
     }
     .chats-body{
         width: 95%; 
+        
       }
+      
 }
 @media screen and (max-width:605px) {
     .chats-body-leftside{
@@ -249,6 +252,10 @@ background-color: var(--blue1);
     .chats-body-rightside{
         border-right: none;
     }
+    .chatbox-body{
+        height: 70%;
+       
+    }
   
 }
 @media screen and (max-width:550px) {
@@ -256,4 +263,10 @@ background-color: var(--blue1);
         width: 92%; 
       }
   
+}
+@media screen and (max-width:410px) {
+    .my-msg,
+.user-msg{
+    font-size: 12px;
+}
 }

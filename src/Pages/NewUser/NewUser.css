@@ -109,6 +109,15 @@ position: relative;
    }
 }
 
+@media screen and (max-width:1136px) {
+    .newUser-container{
+     
+    position: relative;
+    transform: translateX(0%);
+width: 100%;
+   
+    }
+}
 @media screen and (max-width:1133px) {
     .text-field{
         width: 94%;
@@ -139,8 +148,7 @@ position: relative;
         grid-column: 1/-1;
         padding: 1em;    
         grid-template-columns: repeat(auto-fit,minmax(350px,max-content));
-        transform: translateX(0);
-width: 100%;
+       
     }
     .newUser-save-container {
         gap: 0;
