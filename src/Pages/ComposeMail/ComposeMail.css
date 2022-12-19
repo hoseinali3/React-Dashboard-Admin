@@ -73,6 +73,14 @@
 }
 
 
+@media screen and (max-width:900px) {
+    .composemail-desc{
+       
+        height:15em ;
+       
+    }
+}
+
 @media screen and (max-width:745px) {
     .composemail-body{
     
@@ -98,5 +106,13 @@
     
       
         width: 90%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .composemail-desc{
+       
+        height:13em ;
+       
     }
 }

@@ -2,7 +2,7 @@
 
 .chats-container{
     grid-column: 2/5;
-    padding: 2em 1em 1em 4em;
+    padding: 1em;
 }
 
 .chats-body{
