@@ -8,6 +8,12 @@ import EditUser from "./Pages/EditUser/EditUser";
 import Staff_Charts from "./Pages/Charts/Staff_Charts";
 import Sales from "./Pages/Sales/Sales";
 import Trades from "./Pages/Trades/Trades";
+import QReports from "./Pages/QReports/QReports";
+import Emails from "./Pages/Emails/Emails";
+import DetailEmail from "./Pages/DetailEmail/DetailEmail";
+import ComposeMail from "./Pages/ComposeMail/ComposeMail";
+import Chats from "./Pages/Chats/Chats";
+import Staff_Reports from "./Pages/Staff_reports/Staff_Reports";
 
 const Routes = [
     {path:'/React-Dashboard-Admin/', element: <Home/>},
@@ -19,7 +25,13 @@ const Routes = [
     {path:'/React-Dashboard-Admin/products', element: <Products/>},
     {path:'/React-Dashboard-Admin/product/:productID',element:<Product/>},
     {path:'/React-Dashboard-Admin/trades',element:<Trades/>},
-    {path:'/React-Dashboard-Admin/staff_chart',element:<Staff_Charts/>}
+    {path:'/React-Dashboard-Admin/q_reports',element:<QReports/>},
+    {path:'/React-Dashboard-Admin/emails',element:<Emails/>},
+    {path:'/React-Dashboard-Admin/email/:emailID',element:<DetailEmail/>},
+    {path:'/React-Dashboard-Admin/composemail',element:<ComposeMail/>},
+    {path:'/React-Dashboard-Admin/messages',element:<Chats/>},
+    {path:'/React-Dashboard-Admin/staff_chart',element:<Staff_Charts/>},
+    {path:'/React-Dashboard-Admin/staff_reports',element:<Staff_Reports/>}
    
 ]
 

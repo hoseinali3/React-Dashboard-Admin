@@ -38,6 +38,7 @@
    display: grid;
    grid-template-columns: repeat(2,max-content);
    align-items: center;
+   column-gap: 4em;
  }
 
 .widget2-customer,

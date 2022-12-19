@@ -17,7 +17,7 @@ const [featuresDB, setFeaturesDB] = useState([
                 <MiniChart {...item} key={item.id}/>
             ))
         }
-          <BarCharts chart={ChartData} title="سود معاملات"/>
+          <BarCharts chart={ChartData} title="سود معاملات" colorchart="#0095ff"/>
           <div className="trade-cards">
             <div className="t-card1">
               <h3 className="t-card-title">مشتریان</h3>
@@ -32,7 +32,7 @@ const [featuresDB, setFeaturesDB] = useState([
             <div className="t-card3">
             <h3 className="t-card-title">درآمد</h3>
             <h5 className="t-card3-profit">32%+</h5>
-            <h4 className='t-card3-num'>$27.6</h4>
+            <h4 className='t-card3-num'>$27.6K</h4>
             </div>
             <div className="t-card4">
             <h3 className="t-card-title">کاربران فعال</h3>
@@ -42,12 +42,12 @@ const [featuresDB, setFeaturesDB] = useState([
             <div className="t-card5">
             <h3 className="t-card-title">معامله</h3>
             <h5 className="t-card5-profit">8%-</h5>
-            <h4 className='t-card5-num'>45.6K</h4>
+            <h4 className='t-card5-num'>$89.6K</h4>
             </div>
             <div className="t-card6">
             <h3 className="t-card-title">بازپرداخت</h3>
             <h5 className="t-card6-profit">3%-</h5>
-            <h4 className='t-card6-num'>45.6K</h4>
+            <h4 className='t-card6-num'>$32.1K</h4>
             </div>
           </div>
     </div>

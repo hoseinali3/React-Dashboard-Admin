@@ -1,0 +1,152 @@
+.qreports-container {
+    grid-column: 2/5;
+    padding: 2em 1em 0 2.1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-rows: 150px 250px 600px;
+    gap: 20px;
+}
+
+.q-card-detail {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+.q-chart {
+    grid-row: span 2;
+}
+
+.q-card-title {
+    font-size: 26px;
+}
+
+.q-report-cards {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.q-card1,
+.q-card2,
+.q-card3,
+.q-card4 {
+    box-shadow: var(--boxShadow);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 20px;
+    flex-direction: column;
+}
+
+
+
+.q-card1-num,
+.q-card2-num,
+.q-card3-num,
+.q-card4-num {
+    font-family: Lato-Regular;
+    font-size: 32px;
+    align-self: center;
+}
+
+.q-card1-num {
+    color: #fe9e19;
+}
+
+.q-card2-num {
+    color: #0057ee;
+}
+
+.q-card3-num {
+    color: #d92100;
+}
+
+.q-card4-num {
+    color: #4ad300;
+}
+
+
+
+.q-card1-profit,
+.q-card2-profit,
+.q-card3-profit,
+.q-card4-profit {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10em;
+    justify-self: start;
+}
+
+.q-card1-profit {
+    color: #ffac38;
+    background-color: #fe9f1921;
+}
+
+.q-card2-profit {
+    color: #0057ee;
+    background-color: #0057ee21;
+}
+
+.q-card3-profit {
+    color: #d92100;
+    background-color: #d9210021;
+}
+
+.q-card4-profit {
+    color: #4ad300;
+    background-color: #4ad30021;
+}
+
+
+
+
+@media screen and (max-width:1369px) {
+    .qreports-container {
+       
+        grid-template-rows: 330px 250px 600px;
+        
+    }
+}
+@media screen and (max-width:1195px) {
+    .qreports-container {
+        grid-template-rows: 330px repeat(2,250px) 600px;
+       
+
+    }
+}
+
+@media screen and (max-width:733px) {
+    .qreports-container {
+        grid-template-rows: 670px repeat(2,250px) repeat(2,400px);
+
+    }
+  
+}
+
+@media screen and (max-width:700px) {
+    .qreports-container {
+        grid-column: 1/-1;
+        grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+        grid-template-rows: 330px repeat(2,250px) repeat(2,400px);
+        padding: 1em;
+        
+    }
+}
+@media screen and (max-width:552px) {
+    .qreports-container {
+        grid-template-rows: 670px repeat(2,250px) repeat(2,400px);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+@media screen and (max-width:360px) {
+    .qreports-container {
+        grid-template-rows: 670px repeat(2,220px) repeat(2,400px);
+        
+    }
+}

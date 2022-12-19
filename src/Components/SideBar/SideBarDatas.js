@@ -84,13 +84,13 @@ const sideBarData = [
         },
         {
           id: 10,
-          link: "/React-Dashboard-Admin/reactions",
+          link: "/React-Dashboard-Admin/composemail",
           icon: <ChatBubbleOutlineOutlinedIcon/>,
-          linkName: "بازخورد"
+          linkName: "ایمیل جدید"
         },
         {
           id: 11,
-          link: "/React-Dashboard-Admin/massages",
+          link: "/React-Dashboard-Admin/messages",
           icon: <QuestionAnswerOutlinedIcon/>,
           linkName: "پیام ها"
         }
@@ -100,20 +100,20 @@ const sideBarData = [
       id: 4,
       title: "کارکنان",
       newLi: [
+        // {
+        //   id: 1,
+        //   link: "/React-Dashboard-Admin/administrator",
+        //   icon: <WorkOutlineOutlinedIcon/>,
+        //   linkName: "مدیریت"
+        // },
         {
           id: 1,
-          link: "/React-Dashboard-Admin/administrator",
-          icon: <WorkOutlineOutlinedIcon/>,
-          linkName: "مدیریت"
-        },
-        {
-          id: 2,
           link: "/React-Dashboard-Admin/staff_chart",
           icon: <TimelineOutlinedIcon/>,
           linkName: "نمودار"
         },
         {
-          id: 3,
+          id: 2,
           link: "/React-Dashboard-Admin/staff_reports",
           icon: <ErrorOutlineOutlinedIcon/>,
           linkName: "گزارشات"

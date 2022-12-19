@@ -4,7 +4,7 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import './MiniChart.css'
 export default function MiniChart(props) {
-    console.log(props.chart);
+   
   return (
     <div className='minichart-container'>
       <div className="sale-card">

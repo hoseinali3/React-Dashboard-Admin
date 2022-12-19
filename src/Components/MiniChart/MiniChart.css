@@ -78,3 +78,16 @@ top: 0.9em;
         font-size: 25px !important;
     }
 }
+@media screen and (max-width:360px) {
+    .sale-title {
+       
+        font-size: 28px;
+    }
+    .sale-price {
+        font-size: 24px;
+       
+    }
+    .sale-card {
+        padding: 20px 5% 0 0;
+    }
+}

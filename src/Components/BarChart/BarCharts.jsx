@@ -24,7 +24,7 @@ export default function BarCharts(props) {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="فروش" fill="#0095ff" />
+          <Bar dataKey="فروش" fill={props.colorchart} />
           
         </BarChart>
       </ResponsiveContainer>

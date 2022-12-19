@@ -18,6 +18,7 @@
     "canvasjs": "^1.8.3",
     "date-fns": "^2.29.3",
     "dayjs": "^1.11.6",
+    "echarts": "^5.4.1",
     "json-server": "^0.17.1",
     "luxon": "^3.1.0",
     "moment": "^2.29.4",

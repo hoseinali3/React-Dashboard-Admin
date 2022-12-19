@@ -9,11 +9,6 @@ export default function MSideBar(props) {
 
 
 
-
-
-
-
-
   return (
     
          
@@ -33,7 +28,7 @@ export default function MSideBar(props) {
 
 
             {item.newLi.length && (item.newLi.map(li => (
-                <li key={li.id} className='sidebar-ListItem'> <Button className='glow-btn'> <Link to={li.link} className={`navlinks${window.location.pathname == li.link ? " activ" : ""}`}>{li.icon}<span>{li.linkName}</span></Link></Button></li>
+                <li key={li.id} className='sidebar-ListItem'> <Button className='glow-btn'> <Link to={li.link} className={`navlinks${window.location.pathname === li.link ? " activ" : ""}`}>{li.icon}<span>{li.linkName}</span></Link></Button></li>
             )))}
 
         </ul>

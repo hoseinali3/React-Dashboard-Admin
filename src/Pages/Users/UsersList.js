@@ -93,6 +93,7 @@ let mainIndex = users.map((user,index) => {
         rows={users}
         columns={columns}
         rowsPerPageOptions={[5]}
+        checkboxSelection
         disableSelectionOnClick
       />
     </div>

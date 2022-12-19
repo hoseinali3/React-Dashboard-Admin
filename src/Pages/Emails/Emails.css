@@ -1,0 +1,8 @@
+
+
+
+.actionEmails{
+    display: grid;
+    grid-template-columns: repeat(3,max-content);
+   column-gap: 10px;
+}

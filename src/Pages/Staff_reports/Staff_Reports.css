@@ -1,0 +1,11 @@
+
+
+.staff-reports-container{
+    grid-column: 2/5;
+}
+
+@media screen and (max-width:700px) {
+    .staff-reports-container{
+        grid-column: 1/-1;
+    }
+}
